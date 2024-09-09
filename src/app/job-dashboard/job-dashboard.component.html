@@ -1,0 +1,31 @@
+<mat-toolbar color="primary">
+    <span>Cron Job Dashboard</span>
+  </mat-toolbar>
+  
+  <div class="time-group">
+    <h2>Morning Jobs</h2>
+    <ul>
+      <li *ngFor="let job of cronJobs.morning">
+        {{ job.command }} - {{ job.status }}
+      </li>
+    </ul>
+  </div>
+  
+  <div class="time-group">
+    <h2>Afternoon Jobs</h2>
+    <ul>
+      <li *ngFor="let job of cronJobs.afternoon">
+        {{ job.command }} - {{ job.status }}
+      </li>
+    </ul>
+  </div>
+  
+  <div class="time-group">
+    <h2>Evening Jobs</h2>
+    <ul>
+      <li *ngFor="let job of cronJobs.evening">
+        {{ job.command }} - {{ job.status }}
+      </li>
+    </ul>
+  </div>
+  
